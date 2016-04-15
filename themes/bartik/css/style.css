@@ -354,7 +354,7 @@ h1#site-name {
 }
 .region-header .form-required {
   color: #1f0000;
-  color: rgba(255, 255, 255, 0.7);
+  /*color: rgba(255, 255, 255, 0.7);*/
 }
 /* Region header block menus. */
 .region-header .block-menu {
