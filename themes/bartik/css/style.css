@@ -353,7 +353,7 @@ h1#site-name {
   background: rgba(255, 255, 255, 0.8);
 }
 .region-header .form-required {
-  color: #eee;
+  color: #1f0000;
   color: rgba(255, 255, 255, 0.7);
 }
 /* Region header block menus. */
