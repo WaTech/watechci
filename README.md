@@ -1,4 +1,4 @@
-
+[![Build Status](http://54.183.116.233:8080/buildStatus/icon?job=AccessibilityCI)](http://54.183.116.233:8080/job/AccessibilityCI/)
 CONTENTS OF THIS FILE
 ---------------------
 
