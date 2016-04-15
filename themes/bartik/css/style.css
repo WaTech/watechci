@@ -1640,6 +1640,6 @@ div.admin-panel .description {
   background-color: #ddd;
 }
 
-.form-required, .foo {
+.form-required {
     color: #1f0000;
 }
