@@ -31,5 +31,5 @@ deployment:
       - git clone https://github.com/WaTech/watechci.git && cd watechci
       - bin/deploy.sh
       - mysqldump -u ubuntu circle_test > pantheon.sql
-      - terminus site clear-caches --site=no-excuses --env=dev
-      - terminus drush sqlc < pantheon.sql --site=no-excuses --env=dev
+      - terminus site clear-caches --site=watechci --env=dev
+      - terminus drush sqlc < pantheon.sql --site=no-watechci --env=dev
