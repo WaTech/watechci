@@ -16,7 +16,7 @@ dependencies:
     - composer install --prefer-dist
   post:
     #- sudo chown -R $(whoami):www-data www
-    - build/install.sh
+    - cd watechci/bin && install.sh
 
 test:
   override:
@@ -26,9 +26,9 @@ deployment:
   pantheon:
     branch: master
     commands:
-      - install.sh
-      - composer install --no-dev --no-scripts
       - git clone https://github.com/WaTech/watechci.git && cd watechci
+      - bin/install.sh
+      - composer install --no-dev --no-scripts
       - bin/deploy.sh
       - mysqldump -u ubuntu circle_test > pantheon.sql
       - terminus site clear-caches --site=watechci --env=dev
