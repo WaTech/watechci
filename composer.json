@@ -50,10 +50,10 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "bin/watechci"
+            "watechci/bin/deploy.sh"
         ],
         "post-update-cmd": [
-            "bin/watechci"
+            "watechci/bin/deploy.sh"
         ]
     }
 }
