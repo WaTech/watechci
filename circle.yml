@@ -20,7 +20,7 @@ dependencies:
 
 test:
   override:
-      - bin/behat
+      #- bin/behat
 
 deployment:
   pantheon:
@@ -28,7 +28,8 @@ deployment:
     commands:
       - build/install.sh
       - composer install --no-dev --no-scripts
-      - bin/deploy
+      - git clone https://github.com/WaTech/watechci.git && cd watechci
+      - bin/deploy.sh
       - mysqldump -u ubuntu circle_test > pantheon.sql
       - terminus site clear-caches --site=no-excuses --env=dev
       - terminus drush sqlc < pantheon.sql --site=no-excuses --env=dev
