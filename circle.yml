@@ -16,7 +16,7 @@ dependencies:
     - composer install --prefer-dist
   post:
     #- sudo chown -R $(whoami):www-data www
-    - cd watechci/bin && install.sh
+    #- cd watechci/bin && install.sh
 
 test:
   override:
