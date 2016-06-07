@@ -27,6 +27,7 @@ deployment:
     branch: master
     commands:
       - git clone https://github.com/WaTech/watechci.git && cd watechci
+      - chmod u+x **/*.sh
       - bin/install.sh
       - composer install --no-dev --no-scripts
       - bin/deploy.sh
